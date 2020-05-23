@@ -109,6 +109,18 @@ If we include providers in component, every component instance will create new i
 })
 ```
 
+12. Interpolation
+
+{{ }} which helps in rendering class properties in template.
+
+14. class binding
+
+```
+<input [class]="CLASS_NAME" value="v">
+<input [class.text_blue]="CONDITION" value="v">
+<input [ngClass]="CLASS_OBJECT" value="v">
+
+```
 
 
 
