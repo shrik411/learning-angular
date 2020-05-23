@@ -63,6 +63,55 @@ Structural directive is something which makes changes in DOM before rendering de
 
 Attribute directives alter appearance or behaviour of the DOM element. ex:- <input [(ngModule)]="hero.name"/>
 
+10. services
+
+Services club together well defined functionality which can be injected in component. Service should do one kind of functionality and should do it really well.
+
+Services helps to keep components lean and efficient by keeping out the logic except rendering in component classes.
+Services helps to maintain the piece of logic which can be injected into any component and is not component specific.
+
+11. Providing services
+
+When you need any service inside the component, injector check for the provider instance if its present injector includes the provider else it creates new instance and add to injector and provides to required class.
+
+By default, when we generate service using ng generate service
+
+Service is register at root level, creating single instance of the serive to be user throgh dependancy injection.
+
+```
+@Injectable({
+ providedIn: 'root',
+})
+```
+
+provider helps in making code lean by removing the instance if its not needed in the context.
+
+
+If we register provicer in NgModule, this will be available across the module for all included components.
+
+```
+@NgModule({
+  providers: [
+  BackendService,
+  Logger
+ ],
+ ...
+})
+```
+
+If we include providers in component, every component instance will create new instance of the provider.
+
+```
+@Component({
+  selector:    'app-hero-list',
+  templateUrl: './hero-list.component.html',
+  providers:  [ HeroService ]
+})
+```
+
+
+
+
 
 
 
