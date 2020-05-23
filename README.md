@@ -122,7 +122,14 @@ If we include providers in component, every component instance will create new i
 
 ```
 
+15. Style binding
 
+```
+<input [style.color]="'orange'" type="text"/>
+<input [style.color]="hasError ? 'orange': ''" type="text"/>
+<input [style.color]="variableName" type="text"/>
+<input [ngStyle]="variableName" type="text"/>
+```
 
 
 
