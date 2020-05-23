@@ -28,5 +28,13 @@ Angular loads as collection of Javascript modules, lets think them as library mo
 
 import { Component } from '@angular/core'
 
-7. 
+7. Components 
+
+Components control patch of screen called view
+
+For example, individual components define and control each of the following views from the Tour of Heroes tutorial:
+
+The app root with the navigation links.
+The list of heroes.
+The hero editor.
 
