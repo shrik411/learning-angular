@@ -20,4 +20,11 @@ Hierarchy is very important in angular rendering as this bring a view by hidding
 5. NgModules and JavaScript modules
 NgModules are diffrent than tradiction javascript Modules, In Javascript each js files is a module which contains objects inside which belongs to that modules, some objects are exposed to used by other modules by using export keyword. Other modules can import those object.
 
+6. Angular libraries
+
+Angular loads as collection of Javascript modules, lets think them as library modules. The modules can be load using npm, each  Angular library name begins with @angular. they can be imported using angular import statement.
+
+import { Component } from '@angular/core'
+
+7. 
 
