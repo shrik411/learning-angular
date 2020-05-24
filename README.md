@@ -193,3 +193,17 @@ Attributes
 * ngModel
 * ngModelGroup
 
+19. Reactive Forms:
+Import ReactiveFormsModule to NgModule
+```
+import { FormGroup, FormControl } from '@angular/forms';
+
+registrationForm = new FormGroup({ 
+  userName: new FormControl(),
+  email: new FormControl(),
+  address: new FormGroup({
+    street: new FormControl()
+  });
+});
+
+```
