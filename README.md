@@ -106,6 +106,8 @@ Its hard for testing, as for evey instance of Car we will receive same instance 
 
 With DI pattern the dependancies are received from external resource rather that creating them in class itself.
 
+Angular provides injector to manage dependancies,  
+Injector registers all the dependancies in angular and provide instance of it whenever called.
 
 11. Providing services
 
