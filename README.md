@@ -182,6 +182,14 @@ If we include providers in component, every component instance will create new i
 17. Angular Forms
   * Template Driven Forms:  
   Heavy on component template
-  * Reactive:  
+  * Reactive / Model driven Forms:  
   Heavy on component class
+  
+18. Template driven forms
+import FormsModule from @angular/forms
+
+Attributes
+* ngForm
+* ngModel
+* ngModelGroup
 
