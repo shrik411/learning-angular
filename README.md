@@ -67,16 +67,45 @@ Attribute directives alter appearance or behaviour of the DOM element. ex:- <inp
 
 A class with specific purpose.
 
-1. Share data.
+  1. Share data.
 
-2. Implement common application logic.
+  2. Implement common application logic.
 
-3. External Interaction.
+  3. External Interaction.
 
 Services club together well defined functionality which can be injected in component. Service should do one kind of functionality and should do it really well.
 
 Services helps to keep components lean and efficient by keeping out the logic except rendering in component classes.
 Services helps to maintain the piece of logic which can be injected into any component and is not component specific.
+
+12. Dependancy injection
+
+Dependancy injection is design pattern in which class recieves its dependancies from external sources rather than creating them itself.
+
+Problems without DI
+```
+class Engine() {
+}
+
+class Tires() {
+}
+
+class Car() {
+ engine;
+ tires;
+ constructor() {
+   this.engine = new Engine()
+   this.tires = new Tires()
+ }
+}
+```
+
+If params change, we need to make changes in Car class
+
+Its hard for testing, as for evey instance of Car we will receive same instance of engine and tires, what if we want petrol engines and specific tires.
+
+With DI pattern the dependancies are received from external resource rather that creating them in class itself.
+
 
 11. Providing services
 
