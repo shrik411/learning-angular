@@ -174,6 +174,8 @@ If we include providers in component, every component instance will create new i
 <input [ngStyle]="variableName" type="text"/>
 ```
 
-
-
+16. DI hierarchy in Angular  
+  * If we register service in controller, it will be availabe for that controller and child of that controller.
+  * If service is registered in AppController, this will be available in all controllers below App.
+  * Service can be registered at NgModule, this will be then available for all the controller in the scope of the project. This is the preferred place to register the service.
 
