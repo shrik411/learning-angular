@@ -108,6 +108,10 @@ With DI pattern the dependancies are received from external resource rather that
 
 Angular provides injector to manage dependancies,  
 Injector registers all the dependancies in angular and provide instance of it whenever called.
+Steps for calling service  
+  * Define the service.  
+  * Register the service with Injector
+  * declare the dependancies.
 
 11. Providing services
 
