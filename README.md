@@ -65,6 +65,14 @@ Attribute directives alter appearance or behaviour of the DOM element. ex:- <inp
 
 10. services
 
+A class with specific purpose.
+
+1. Share data.
+
+2. Implement common application logic.
+
+3. External Interaction.
+
 Services club together well defined functionality which can be injected in component. Service should do one kind of functionality and should do it really well.
 
 Services helps to keep components lean and efficient by keeping out the logic except rendering in component classes.
