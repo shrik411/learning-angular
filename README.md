@@ -1,3 +1,17 @@
+## questions
+Entry component
+Immpure Pipe
+interceptor in angular
+async pipe in angular 6 example
+async pipe in angular 6 example
+observable vs promise
+mergemap
+forkjoin vs mergemap
+Event capturing
+Currying in JavaScript
+Event Loop
+https://scotch.io/tutorials/understanding-hoisting-in-javascript
+
 # learning-angular
 1. What is NgModule
 
